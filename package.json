@@ -42,7 +42,6 @@
   },
   "pre-commit": "lint:staged",
   "devDependencies": {
-    "null-loader": "^0.1.1",
     "add-asset-html-webpack-plugin": "^2.0.0",
     "babel-core": "^6.24.0",
     "babel-eslint": "^7.2.0",
@@ -75,10 +74,13 @@
     "lint-staged": "^3.4.0",
     "mocha": "^3.3.0",
     "mocha-css": "^1.0.1",
+    "node-sass": "^4.5.3",
+    "null-loader": "^0.1.1",
     "postcss": "^6.0.0",
     "postcss-cssnext": "^2.10.0",
     "pre-commit": "^1.2.0",
     "rimraf": "^2.6.0",
+    "sass-loader": "^6.0.6",
     "sinon": "2.2.0",
     "sinon-chai": "^2.10.0",
     "style-loader": "^0.17.0",
@@ -128,5 +130,10 @@
   "license": {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "dependencies": {
+    "github-markdown-css": "^2.8.0",
+    "highlightjs": "^9.10.0",
+    "node-emoji": "^1.8.1"
   }
 }

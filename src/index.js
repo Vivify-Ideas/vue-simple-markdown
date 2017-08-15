@@ -1,9 +1,7 @@
-import Hello from './Hello.vue'
-import HelloJsx from './Hello.jsx'
+import VueSimpleMarkdown from './vue-simple-markdown.component.vue'
 
 function plugin (Vue) {
-  Vue.component('hello', Hello)
-  Vue.component('hello-jsx', HelloJsx)
+  Vue.component('vue-simple-markdown', VueSimpleMarkdown)
 }
 
 // Install by default if using the script tag
@@ -15,7 +13,6 @@ export default plugin
 const version = '__VERSION__'
 // Export all components too
 export {
-  Hello,
-  HelloJsx,
+  VueSimpleMarkdown,
   version
 }
