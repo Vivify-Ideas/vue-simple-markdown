@@ -121,12 +121,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbackonja/vue-simple-markdown.git"
+    "url": "git+https://github.com/Vivify-Ideas/vue-simple-markdown.git"
   },
   "bugs": {
-    "url": "https://github.com/mbackonja/vue-simple-markdown/issues"
+    "url": "https://github.com/Vivify-Ideas/vue-simple-markdown/issues"
   },
-  "homepage": "https://github.com/mbackonja/vue-simple-markdown#readme",
+  "homepage": "https://github.com/Vivify-Ideas/vue-simple-markdown#readme",
   "license": {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"
