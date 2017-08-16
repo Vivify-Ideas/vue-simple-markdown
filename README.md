@@ -50,12 +50,13 @@ Vue.use(VueSimpleMarkdown)
 | highlight | Boolean | `true` | SyntaxHighlighter ([highlightjs](https://www.npmjs.com/package/highlightjs)) |
 | horizontal-line | Boolean | `true` | `***` or `___` or `---` => `<hr />` |
 | image | Boolean | `true` | `![imageName.png](imageLocation)` |
-| inlineCode | Boolean | `true` | \`someCode\` => `someCode` |
+| inline-code | Boolean | `true` | \`someCode\` => `someCode` |
 | italic | Boolean | `true` | `*text*` or `_text_` => *text* |
-| linkify | Boolean | `true` | autoconvert URL-like text to link |
+| linkify | Boolean | `true` | Autoconvert URL-like text to link |
 | link | Boolean | `true` | `[Github](https://github.com/)` => [Github](https://github.com/) |
 | lists | Boolean | `true` | Lists, see [here](#lists) |
 | strong | Boolean | `true` | `**text**` or `__text__` => __text__ |
+| blockqoute | Boolean | `true` | Blockqoutes, see [here](#blockqoutes) |
 | prerender | Function | `(source) => return { source }` | Function executed before rendering process |
 | postrender | Function | `(html) => { return html }` | Function executed after rendering process |
 
@@ -81,6 +82,13 @@ Number of spaces before that characte => nesting level
    2. Again third nesting level
 ```
 
+### Blockqoutes
+```
+> First nesting level
+>> Second nesting level
+>>> Third nesting level
+>>>>>>>>>> Tenth nesting level
+>>> Again third nesting level
 
 ## Development
 
