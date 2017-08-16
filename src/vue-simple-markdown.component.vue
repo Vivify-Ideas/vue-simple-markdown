@@ -94,7 +94,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import './../node_modules/github-markdown-css/github-markdown.css';
+@import '~github-markdown-css/github-markdown.css';
 
 .vue-simple-markdown {
   white-space: pre-wrap;
