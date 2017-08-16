@@ -39,11 +39,7 @@ module.exports = {
       {
         test: /.jsx?$/,
         use: 'babel-loader',
-        include: [
-          resolve(__dirname, '../node_modules/@material'),
-          resolve(__dirname, '../src'),
-          resolve(__dirname, '../test')
-        ]
+        exclude: /node_modules/
       },
       {
         test: /\.vue$/,
