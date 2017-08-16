@@ -1,6 +1,8 @@
 const QUOTE_REGEX = /^(>+)(.*)/
 
 export class Quote {
+  static get RULE_NAME () { return 'blockquote' }
+
   static parse (source) {
     const lines = source.split('\n')
     let inQuote = false

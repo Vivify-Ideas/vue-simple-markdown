@@ -63,6 +63,10 @@ export default {
     strong: {
       type: Boolean,
       default: true
+    },
+    blockquote: {
+      type: Boolean,
+      default: true
     }
   },
   computed: {
@@ -80,7 +84,8 @@ export default {
         link: this.link,
         linkify: this.linkify,
         lists: this.lists,
-        strong: this.strong
+        strong: this.strong,
+        blockquote: this.blockquote
       })
 
       return this.postrender(source)
