@@ -9,7 +9,7 @@ export default {
   name: 'vue-simple-markdown',
   props: {
     source: {
-      type: String | Number,
+      type: [String, Number],
       default: ''
     },
     prerender: {
@@ -71,7 +71,7 @@ export default {
   },
   computed: {
     parsed () {
-      let source = this.prerender(this.source)
+      let source = this.prerender(this.source.toString())
 
       source = VueSimpleMarkdownParser.parse(source, {
         emoji: this.emoji,
