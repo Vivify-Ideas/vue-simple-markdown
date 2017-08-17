@@ -6,8 +6,6 @@ export class Utils {
   }
 
   static escapeTagStart (source) {
-    return source.replace(/\</gm, (s) => {
-      return `&#${s.charCodeAt(0)};`
-    })
+    return source.replace(/\</g, '&lt;')
   }
 }

@@ -9,7 +9,7 @@ export default {
   name: 'vue-simple-markdown',
   props: {
     source: {
-      type: String,
+      type: String | Number,
       default: ''
     },
     prerender: {
