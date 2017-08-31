@@ -50,12 +50,14 @@ export class Lists {
         if (inList) {
           inList = false
           lines[index - 1] += this.closeList(listNestingLevel, tag)
+          listNestingLevel = 0
         }
       }
     })
 
     if (inList) {
       lines[lines.length - 1] += this.closeList(listNestingLevel, tag)
+      listNestingLevel = 0
     }
 
     inList = false
