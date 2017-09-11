@@ -56,7 +56,7 @@ Vue.use(VueSimpleMarkdown)
 | link | Boolean | `true` | `[Github](https://github.com/)` => [Github](https://github.com/) |
 | lists | Boolean | `true` | Lists, see [here](#lists) |
 | strong | Boolean | `true` | `**text**` or `__text__` => __text__ |
-| blockqoute | Boolean | `true` | Blockqoutes, see [here](#blockqoutes) |
+| blockquote | Boolean | `true` | Blockquotes, see [here](#blockquotes) |
 | prerender | Function | `(source) => return { source }` | Function executed before rendering process |
 | postrender | Function | `(html) => { return html }` | Function executed after rendering process |
 
@@ -64,7 +64,7 @@ Vue.use(VueSimpleMarkdown)
 #### Unordered list
 
 Start list with characters `*`, `+` or `-`  
-Number of spaces before that characte => nesting level
+Number of spaces before that character => nesting level
 
 ```
 * First nesting level
@@ -76,7 +76,7 @@ Number of spaces before that characte => nesting level
 #### Ordered list
 
 Start list with number and dot. At example `1.`  
-Number of spaces before that characte => nesting level
+Number of spaces before that character => nesting level
 
 ```
 1. First nesting level
@@ -86,7 +86,7 @@ Number of spaces before that characte => nesting level
    2. Again third nesting level
 ```
 
-## Blockqoutes
+## Blockquotes
 ```
 > First nesting level
 >> Second nesting level
