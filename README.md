@@ -64,7 +64,7 @@ Vue.use(VueSimpleMarkdown)
 #### Unordered list
 
 Start list with characters `*`, `+` or `-`  
-Number of spaces before that characte => nesting level
+Number of spaces before that character => nesting level
 
 ```
 * First nesting level
@@ -76,7 +76,7 @@ Number of spaces before that characte => nesting level
 #### Ordered list
 
 Start list with number and dot. At example `1.`  
-Number of spaces before that characte => nesting level
+Number of spaces before that character => nesting level
 
 ```
 1. First nesting level
