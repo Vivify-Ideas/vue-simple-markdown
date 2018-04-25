@@ -8,4 +8,8 @@ export class Utils {
   static escapeTagStart (source) {
     return source.replace(/\</g, '&lt;')
   }
+
+  static escapeQuote (source) {
+    return source.replace(/"/g, '&quot;')
+  }
 }
