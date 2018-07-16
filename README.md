@@ -37,7 +37,7 @@ Vue.use(VueSimpleMarkdown)
 ```
 
 ### Syntax
-```
+```vue
 <vue-simple-markdown :source="source"></vue-simple-markdown>
 ```
 ### Props
