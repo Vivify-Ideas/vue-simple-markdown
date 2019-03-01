@@ -17,11 +17,11 @@ const RULES = [
   HorizontalLine,
   Lists,
   Quote,
-  Link,
-  Linkify,
   Strong,
   Italic,
   Img,
+  Link,
+  Linkify,
   Heading,
   Emoji,
   InlineCode
