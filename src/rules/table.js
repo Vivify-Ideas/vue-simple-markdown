@@ -52,7 +52,6 @@ export class Table {
         }
         return `<tr> ${cells.join('\n')} </tr>`
       })
-      // return '<table><thead><tr><th>col1</th><th>col2</th></tr></thead><tbody><tr><td>col1</td><td>col2</td></tr></tbody></table>'
       return `<table><thead><tr> ${tableHeaderHtml} </tr></thead><tbody> ${tableRowsHtml.join(
         '\n'
       )} </tbody></table>`
