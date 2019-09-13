@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-markdown",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A Simple and Highspeed Markdown Parser for Vue",
   "author": "Milan Bačkonja <milan.backonja@hotmail.com>",
   "main": "dist/vue-simple-markdown.common.js",
