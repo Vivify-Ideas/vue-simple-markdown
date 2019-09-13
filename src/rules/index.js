@@ -10,6 +10,7 @@ import { InlineCode } from './inline-code'
 import { Highlight } from './highlight'
 import { Linkify } from './linkify'
 import { Quote } from './quote'
+import { Table } from './table'
 
 const RULES = [
   Highlight,
@@ -24,7 +25,8 @@ const RULES = [
   Linkify,
   Heading,
   Emoji,
-  InlineCode
+  InlineCode,
+  Table
 ]
 
 export {
@@ -40,5 +42,6 @@ export {
   Link,
   Linkify,
   Heading,
-  Emoji
+  Emoji,
+  Table
 }

@@ -57,6 +57,7 @@ Vue.use(VueSimpleMarkdown)
 | lists | Boolean | `true` | Lists, see [here](#lists) |
 | strong | Boolean | `true` | `**text**` or `__text__` => __text__ |
 | blockquote | Boolean | `true` | Blockquotes, see [here](#blockquotes) |
+| table | Boolean | `true` | Tables, see [here](#tables) |
 | prerender | Function | `(source) => return { source }` | Function executed before rendering process |
 | postrender | Function | `(html) => { return html }` | Function executed after rendering process |
 
@@ -86,7 +87,7 @@ Number of spaces before that character => nesting level
    2. Again third nesting level
 ```
 
-## Blockquotes
+### Blockquotes
 ```
 > First nesting level
 >> Second nesting level
@@ -94,6 +95,50 @@ Number of spaces before that character => nesting level
 >>>>>>>>>> Tenth nesting level
 >>> Again third nesting level
 ```
+
+### Tables
+A table is an arrangement of data with rows and columns, consisting of a single header row, a delimiter row separating the header from the data, and zero or more data rows.
+Each row must start and end with pipes (`|`) and it consists of cells containing arbitrary text, in which inlines are parsed, separated by pipes (`|`). Spaces between pipes and cell content are trimmed. Block-level elements cannot be inserted in a table.
+Example:
+```
+| Foo | Bar |
+|-----|-----|
+| Bam | Baz |
+```
+| Foo | Bar |
+|-----|-----|
+| Baz | Bim |
+
+You can use colon (`:`) in the delimiter row to determine content alignment of the corresponding column.
+Example:
+```
+| Align left | Align Right | Align Center | Default |
+|:-----------|-:|:---:|--|
+| Some text| Some text | Some | alignment |
+| aligned to|  aligned to | text |
+| the left side| the right side| in the center |
+```
+| Align left | Align Right | Align Center | Default |
+|:-----------|-:|:---:|--|
+| Some text| Some text | Some | alignment |
+| aligned to|  aligned to | text |
+| the left side| the right side| in the center |
+
+Number of columns in each row in the body of the table may vary.
+Example:
+```
+| Column A | Column B | Column C |
+|-|-|-|
+| You can have | | empty cells |
+| This row | is too short |
+| This row | has | too many | cells |
+```
+| Column A | Column B | Column C |
+|-|-|-|
+| You can have | | empty cells |
+| This row | is too short |
+| This row | has | too many | cells |
+
 
 ## Development
 
