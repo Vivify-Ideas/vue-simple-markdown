@@ -29,15 +29,8 @@ export class Table {
         return table
       }
 
-      dataRows = dataRows
-        .trim()
-        .split('\n')
-        .map(row =>
-          row
-            .trim()
-            .slice(1, -1)
-            .split('|')
-        )
+      dataRows = dataRows ? dataRows.trim().split('\n') : []
+      dataRows = dataRows.map(row => row.trim().slice(1, -1).split('|'))
 
       const tableHeaderHtml = headers
         .map((header, columnIndex) => `<th${columnAlignments[columnIndex]}> ${header.trim()} </th>`)
