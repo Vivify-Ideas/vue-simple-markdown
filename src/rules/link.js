@@ -3,10 +3,10 @@ export class Link {
   static get RULE_NAME () { return 'link' }
 
   static parse (source) {
-    return source.replace(LINK_REGEX, (match, blank, urlProtocolDomain, urlPath) => {
+    return source.replace(LINK_REGEX, (match, linkName, urlProtocolDomain, urlPath) => {
       const url = urlProtocolDomain.trim() + urlPath.trim().replace(/:/g, '%3A')
 
-      return `<a href="${url}" target="_blank">${blank}</a>`
+      return `<a href="${url}" target="_blank">${linkName}</a>`
     })
   }
 }
