@@ -1,5 +1,5 @@
 import { Utils } from './../utils'
-import highlightjs from 'highlightjs'
+import highlightjs from 'highlight.js'
 
 const CODE_BLOCK_REGEX = /([^```]*)``` ?(\w*)([\s\S]+?)```([^```]*)/g
 
