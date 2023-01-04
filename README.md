@@ -47,7 +47,7 @@ Vue.use(VueSimpleMarkdown)
 | source | String | '' | The markdown source code |
 | emoji | Boolean | `true` | `:)` => `😃` |
 | heading | Boolean | `true` | `#` => `<h1>`, `##` => `<h2>`... |
-| highlight | Boolean | `true` | SyntaxHighlighter ([highlightjs](https://www.npmjs.com/package/highlightjs)) |
+| highlight | Boolean | `true` | SyntaxHighlighter ([highlight.js](https://www.npmjs.com/package/highlight.js)) |
 | horizontal-line | Boolean | `true` | `***` or `___` or `---` => `<hr />` |
 | image | Boolean | `true` | `![imageName.png](imageLocation)` |
 | inline-code | Boolean | `true` | \`someCode\` => `someCode` |
